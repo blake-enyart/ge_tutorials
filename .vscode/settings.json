@@ -1,0 +1,4 @@
+{
+    "python.formatting.provider": "black",
+    "python.pythonPath": "/Users/blackenyart/gh_projects/ge_tutorials/.venv/bin/python3"
+}

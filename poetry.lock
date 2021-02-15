@@ -1,0 +1,17 @@
+[[package]]
+name = "airflow-provider-great-expectations"
+version = "0.0.4"
+description = "An Apache Airflow provider for Great Expectations"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "b6e1cc96cd38f905d07845ead43aa0b79199c556949182f237d987c265bd4a5e"
+
+[metadata.files]
+airflow-provider-great-expectations = [
+    {file = "airflow-provider-great-expectations-0.0.4.tar.gz", hash = "sha256:d0a77fca005977cbea0ce0151b76f0892ada90ea13324ea15e96a53e939b6ac6"},
+]
