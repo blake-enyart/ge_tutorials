@@ -33,7 +33,7 @@ services:
                 max-file: "3"
         volumes:
             # TODO: Might be better to mount everything at once
-            - ./airflow:/usr/local/airflow/dags
+            - ./airflow/dags:/usr/local/airflow/dags
             - ./great_expectations:/usr/local/airflow/great_expectations
             - ./dbt:/usr/local/airflow/dbt
             - ./data:/usr/local/airflow/data

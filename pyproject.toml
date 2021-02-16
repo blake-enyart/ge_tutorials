@@ -7,6 +7,7 @@ authors = ["Blake Enyart <blake.enyart@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 airflow-provider-great-expectations = "^0.0.4"
+apache-airflow = "1.10.9"
 
 [tool.poetry.dev-dependencies]
 
