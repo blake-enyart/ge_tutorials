@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: source
-    schema: great_expectations
-    tables:
-      - name: npi_small
-      - name: state_abbreviations
-      - name: contacts

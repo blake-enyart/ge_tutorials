@@ -7,7 +7,7 @@ select
 	n.taxonomy_code,
 	n.state_abbreviation,
 	s.state_name
-from {{ ref('stg_npi') }} n
+from {{ ref('stg_npi__providers') }} n
 -- due to the nature of the data some state abbreviations are not valid
 -- which results in state names being null  - in this case,
 -- switch to inner join

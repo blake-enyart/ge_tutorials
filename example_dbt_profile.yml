@@ -14,7 +14,7 @@ ge_tutorials:
       user: airflow
       pass: airflow
       dbname: airflow
-      schema: public
+      schema: great_expectations
     prod:
       type: postgres
       threads: 1
@@ -23,5 +23,5 @@ ge_tutorials:
       user: airflow
       pass: airflow
       dbname: airflow
-      schema: public
+      schema: great_expectations
   target: dev

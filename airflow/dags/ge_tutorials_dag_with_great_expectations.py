@@ -80,7 +80,7 @@ def publish_to_prod():
     with engine.connect() as conn:
         conn.execute(f"drop table if exists {PROD_SCHEMA}.prod_count_providers_by_state")
         conn.execute(
-            f"alter table {PROD_SCHEMA}.count_providers_by_state rename to {PROD_SCHEMA}.prod_count_providers_by_state"
+            f"alter table {PROD_SCHEMA}.count_providers_by_state rename to prod_count_providers_by_state"
         )
 
 
@@ -144,7 +144,7 @@ task_validate_analytical_output = GreatExpectationsOperator(
     expectation_suite_name="count_providers_by_state.critical",
     batch_kwargs={
         "table": "count_providers_by_state",
-        "schema": "great_expectations",
+        "schema": PROD_SCHEMA,
         "datasource": "datawarehouse",
     },
     dag=dag,

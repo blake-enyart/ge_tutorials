@@ -1,0 +1,43 @@
+version: 2
+
+sources:
+  - name: great_expectations
+    tables:
+      - name: npi_small
+      - name: state_abbreviations
+      - name: contacts
+
+models:
+  - name: stg_npi__providers
+    columns:
+      - name: npi
+        description: ''
+        tests:
+          - unique
+          - not_null
+      - name: entity_type_code
+        description: ''
+      - name: organization_name
+        description: ''
+      - name: last_name
+        description: ''
+      - name: first_name
+        description: ''
+      - name: state_abbreviation
+        description: ''
+      - name: taxonomy_code
+        description: ''
+
+  - name: stg_state_abbreviations
+    columns:
+      - name: state_name
+        tests:
+          - unique
+          - not_null
+      - name: state_abbreviation
+        tests:
+          - unique
+          - not_null
+        
+
+
